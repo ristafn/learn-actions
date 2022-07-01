@@ -1,0 +1,19 @@
+name: learn-actions
+on:
+  push:
+    branches:
+      - main
+jobs:
+  check-node-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout-project
+        uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.3.0
+        with:
+          node-version: "18"
+      - name: check-version
+        run: |
+          node -v
+          npm -v
