@@ -20,6 +20,8 @@ jobs:
       - name: new-branch
         run: |
           git branch upload-file
+          git add .
+          git commit -m "hello"
           git push
 
 
