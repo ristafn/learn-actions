@@ -2,7 +2,7 @@ name: learn-actions
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   check-node-version:
     runs-on: ubuntu-latest
